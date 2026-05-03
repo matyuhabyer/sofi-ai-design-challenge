@@ -12,26 +12,26 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-950 to-slate-900 py-24 px-6">
+    <section className="relative overflow-hidden bg-background py-24 px-6">
       {/* Decorative blobs */}
-      <div className="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-pink-600/20 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-purple-600/20 blur-3xl" />
+      <div className="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-brand-cyan-bright/25 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-brand-cyan/20 blur-3xl" />
 
       <div className="relative mx-auto max-w-3xl text-center">
         {/* Badge */}
-        <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-purple-500/40 bg-purple-500/10 px-4 py-1.5 text-sm font-medium text-purple-300">
-          <span className="h-2 w-2 rounded-full bg-purple-400 animate-pulse" />
+        <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-cyan/35 bg-brand-cyan/10 px-4 py-1.5 text-sm font-medium text-brand-navy">
+          <span className="h-2 w-2 rounded-full bg-brand-cyan animate-pulse" />
           Powered by SOFI AI
         </span>
 
-        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
+        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-brand-navy sm:text-6xl">
           GIA —{" "}
-          <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-brand-cyan to-brand-cyan-bright bg-clip-text text-transparent">
             Generative Influencer Analyst
           </span>
         </h1>
 
-        <p className="mt-6 text-xl text-slate-300 leading-relaxed">
+        <p className="mt-6 text-xl text-brand-navy/75 leading-relaxed">
           Know what your TikTok audience is actually telling you.
           <br className="hidden sm:block" />
           Paste your profile link. GIA turns your content into a clear
@@ -48,11 +48,11 @@ export default function HeroSection() {
             value={url}
             onChange={(e) => setUrl(e.target.value)}
             placeholder="https://www.tiktok.com/@yourhandle"
-            className="w-full rounded-xl border border-white/10 bg-white/5 px-5 py-4 text-white placeholder-slate-500 backdrop-blur-sm focus:border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-400/30 sm:w-96"
+            className="w-full rounded-xl border border-brand-navy/15 bg-white px-5 py-4 text-brand-navy placeholder-brand-navy/40 shadow-sm focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/25 sm:w-96"
           />
           <button
             type="submit"
-            className="rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 px-8 py-4 font-semibold text-white shadow-lg shadow-purple-900/40 transition hover:opacity-90 active:scale-95"
+            className="rounded-xl bg-gradient-to-r from-brand-cyan to-brand-cyan-bright px-8 py-4 font-semibold text-white shadow-lg shadow-brand-cyan/30 transition hover:opacity-90 active:scale-95"
           >
             Analyze my TikTok
           </button>
@@ -62,12 +62,12 @@ export default function HeroSection() {
         <div className="mt-5 flex items-center justify-center gap-4">
           <a
             href="#sample-report"
-            className="text-sm font-medium text-purple-300 underline-offset-4 hover:underline"
+            className="text-sm font-medium text-brand-cyan underline-offset-4 hover:text-brand-cyan-bright hover:underline"
           >
             View sample report ↓
           </a>
-          <span className="h-1 w-1 rounded-full bg-slate-600" />
-          <span className="text-sm text-slate-500">
+          <span className="h-1 w-1 rounded-full bg-brand-navy/30" />
+          <span className="text-sm text-brand-navy/55">
             No login required · Public profiles only
           </span>
         </div>

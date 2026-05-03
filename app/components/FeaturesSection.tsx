@@ -27,16 +27,16 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="bg-slate-900 py-20 px-6">
+    <section className="bg-surface-tint py-20 px-6">
       <div className="mx-auto max-w-5xl">
         <div className="mb-14 text-center">
-          <span className="text-sm font-semibold uppercase tracking-widest text-pink-400">
+          <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan">
             🚀 What GIA does
           </span>
-          <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold text-brand-navy sm:text-4xl">
             Turn your TikTok data into decisions
           </h2>
-          <p className="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-brand-navy/70 max-w-2xl mx-auto">
             Most analytics tools show numbers. GIA tells you what they
             mean—and what to do next.
           </p>
@@ -46,13 +46,13 @@ export default function FeaturesSection() {
           {features.map((f) => (
             <div
               key={f.title}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-7 transition hover:border-purple-500/40 hover:bg-purple-500/5"
+              className="group rounded-2xl border border-brand-navy/10 bg-background p-7 shadow-sm transition hover:border-brand-cyan/40 hover:shadow-md"
             >
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/15 text-2xl">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-cyan/12 text-2xl">
                 {f.icon}
               </div>
-              <h3 className="text-lg font-semibold text-white">{f.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-400">
+              <h3 className="text-lg font-semibold text-brand-navy">{f.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-brand-navy/65">
                 {f.description}
               </p>
             </div>

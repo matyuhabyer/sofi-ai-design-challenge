@@ -38,13 +38,13 @@ export default function FAQSection() {
   }
 
   return (
-    <section className="bg-slate-950 py-20 px-6">
+    <section className="bg-surface-tint py-20 px-6">
       <div className="mx-auto max-w-2xl">
         <div className="mb-12 text-center">
-          <span className="text-sm font-semibold uppercase tracking-widest text-purple-400">
+          <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan">
             ❓ FAQ
           </span>
-          <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold text-brand-navy sm:text-4xl">
             Frequently asked questions
           </h2>
         </div>
@@ -53,16 +53,16 @@ export default function FAQSection() {
           {faqs.map((faq, i) => (
             <div
               key={faq.question}
-              className="overflow-hidden rounded-xl border border-white/10 bg-white/5"
+              className="overflow-hidden rounded-xl border border-brand-navy/10 bg-background shadow-sm"
             >
               <button
                 onClick={() => toggle(i)}
                 className="flex w-full items-center justify-between px-6 py-5 text-left"
                 aria-expanded={openIndex === i}
               >
-                <span className="font-medium text-white">{faq.question}</span>
+                <span className="font-medium text-brand-navy">{faq.question}</span>
                 <span
-                  className={`ml-4 shrink-0 text-purple-400 transition-transform duration-200 ${
+                  className={`ml-4 shrink-0 text-brand-cyan transition-transform duration-200 ${
                     openIndex === i ? "rotate-45" : ""
                   }`}
                 >
@@ -71,8 +71,8 @@ export default function FAQSection() {
               </button>
 
               {openIndex === i && (
-                <div className="border-t border-white/10 px-6 py-5">
-                  <p className="text-sm leading-relaxed text-slate-300">
+                <div className="border-t border-brand-navy/10 px-6 py-5">
+                  <p className="text-sm leading-relaxed text-brand-navy/75">
                     {faq.answer}
                   </p>
                 </div>

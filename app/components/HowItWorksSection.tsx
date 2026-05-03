@@ -27,10 +27,10 @@ const steps = [
 
 export default function HowItWorksSection() {
   return (
-    <section className="bg-gradient-to-b from-slate-950 to-slate-900 py-20 px-6">
+    <section className="bg-brand-navy py-20 px-6">
       <div className="mx-auto max-w-4xl">
         <div className="mb-14 text-center">
-          <span className="text-sm font-semibold uppercase tracking-widest text-purple-400">
+          <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan-bright">
             ⚙️ Process
           </span>
           <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
@@ -43,18 +43,18 @@ export default function HowItWorksSection() {
             <li key={step.number} className="relative flex gap-8 pb-12 last:pb-0">
               {/* Vertical connector line */}
               {i < steps.length - 1 && (
-                <div className="absolute left-7 top-14 h-full w-px bg-white/10" />
+                <div className="absolute left-7 top-14 h-full w-px bg-white/15" />
               )}
 
               {/* Step number bubble */}
-              <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-pink-500 to-purple-600 text-sm font-bold text-white shadow-lg shadow-purple-900/40">
+              <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-brand-cyan to-brand-cyan-bright text-sm font-bold text-white shadow-lg shadow-brand-cyan/35">
                 {step.number}
               </div>
 
               {/* Content */}
               <div className="pt-2">
                 <h3 className="text-lg font-semibold text-white">{step.title}</h3>
-                <p className="mt-1 text-sm leading-relaxed text-slate-400">
+                <p className="mt-1 text-sm leading-relaxed text-white/65">
                   {step.description}
                 </p>
               </div>

@@ -1,13 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  /* Core brand */
+  --background: #ffffff;
+  --foreground: #201747;
+  --brand-cyan: #00a2c7;
+  --brand-cyan-bright: #2dc6f2;
+  --brand-navy: #201747;
+  /* Subtle surfaces */
+  --surface-tint: color-mix(in srgb, var(--brand-cyan-bright) 8%, white);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand-cyan: var(--brand-cyan);
+  --color-brand-cyan-bright: var(--brand-cyan-bright);
+  --color-brand-navy: var(--brand-navy);
+  --color-surface-tint: var(--surface-tint);
 }
 
 body {
