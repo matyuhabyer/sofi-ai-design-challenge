@@ -9,7 +9,7 @@ const faqs = [
       "No. Just paste your TikTok profile link and GIA gets to work immediately. No account, no permissions, no data stored.",
   },
   {
-    question: "What data do you analyse?",
+    question: "What data do you analyze?",
     answer:
       "We only use publicly available TikTok data—your videos, captions, and comments. We never access private information or require any credentials.",
   },

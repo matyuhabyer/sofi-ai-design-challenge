@@ -82,7 +82,7 @@ export default function SampleReportSection() {
                 &ldquo;You&apos;re being productive the wrong way&rdquo;
               </p>
               <p className="mt-3 text-xs text-purple-300">
-                → High engagement potential based on audience behaviour
+                → High engagement potential based on audience behavior
               </p>
             </div>
           </div>

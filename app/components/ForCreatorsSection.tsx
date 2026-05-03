@@ -69,7 +69,7 @@ export default function ForCreatorsSection() {
                 G
               </div>
               <span className="text-xs text-slate-400">
-                GIA by SOFI AI • Analysed just now
+                GIA by SOFI AI • Analyzed just now
               </span>
             </div>
           </div>
