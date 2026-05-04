@@ -11,7 +11,10 @@ export default function CTASection() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-brand-cyan via-brand-cyan to-brand-cyan-bright py-24 px-6">
+    <section
+      id="get-started"
+      className="relative scroll-mt-16 overflow-hidden bg-gradient-to-br from-brand-cyan via-brand-cyan to-brand-cyan-bright py-24 px-6"
+    >
       <div className="pointer-events-none absolute -top-32 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-white/20 blur-3xl" />
 
       <div className="relative mx-auto max-w-2xl text-center">

@@ -38,7 +38,7 @@ export default function FAQSection() {
   }
 
   return (
-    <section className="bg-surface-tint py-20 px-6">
+    <section id="faq" className="scroll-mt-16 bg-surface-tint py-20 px-6">
       <div className="mx-auto max-w-2xl">
         <div className="mb-12 text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan">

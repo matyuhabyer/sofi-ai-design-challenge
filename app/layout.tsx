@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ChatWidget from "./components/ChatWidget";
+import SiteHeader from "./components/SiteHeader";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,10 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
-      <body className="min-h-full flex flex-col" suppressHydrationWarning>
-        {children}
-      </body>
-    </html>
+    <html lang="en" className="h-full antialiased" suppressHydrationWarning><body className="min-h-full flex flex-col" suppressHydrationWarning>
+      <SiteHeader />
+      {children}
+      <ChatWidget />
+    </body></html>
   );
 }

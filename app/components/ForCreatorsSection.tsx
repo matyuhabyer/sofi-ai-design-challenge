@@ -7,7 +7,7 @@ const insights = [
 
 export default function ForCreatorsSection() {
   return (
-    <section className="bg-background py-20 px-6">
+    <section id="creators" className="scroll-mt-16 bg-background py-20 px-6">
       <div className="mx-auto max-w-5xl">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           {/* Text side */}
