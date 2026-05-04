@@ -68,35 +68,35 @@ function CheckIcon() {
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="scroll-mt-16 bg-background py-20 px-6">
-      <div className="mx-auto max-w-6xl">
+    <section id="pricing" className="scroll-mt-16 bg-background px-4 py-16 sm:px-6 sm:py-20">
+      <div className="mx-auto min-w-0 max-w-6xl">
         <div className="mb-14 text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan">
             Pricing
           </span>
-          <h2 className="mt-3 text-3xl font-bold text-brand-navy sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-bold text-brand-navy sm:text-3xl md:text-4xl">
             Pick the depth that fits your growth
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-brand-navy/70">
+          <p className="mx-auto mt-4 max-w-2xl px-1 text-base text-brand-navy/70 sm:text-lg">
             Clear one-time reports or ongoing partnership—all priced in PHP,
             no mystery tiers.
           </p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-3 lg:items-start">
+        <div className="grid gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:items-start">
           {PLANS.map((plan) => {
             const featured = plan.variant === "featured";
             return (
               <article
                 key={plan.name}
-                className={`relative flex flex-col rounded-2xl border bg-background p-8 shadow-sm transition motion-safe:duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-lg ${
+                className={`relative flex min-w-0 flex-col rounded-2xl border bg-background p-5 shadow-sm transition motion-safe:duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-lg sm:p-8 ${
                   featured
-                    ? "border-brand-cyan shadow-brand-cyan/15 ring-2 ring-brand-cyan/35 lg:-mt-2 lg:scale-[1.02]"
+                    ? "border-brand-cyan shadow-brand-cyan/15 ring-2 ring-brand-cyan/35"
                     : "border-brand-navy/10 hover:border-brand-cyan/25"
                 }`}
               >
                 {plan.badge ? (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-gradient-to-r from-brand-cyan to-brand-cyan-bright px-4 py-1 text-xs font-bold uppercase tracking-wide text-white shadow-md">
+                  <span className="absolute -top-3 left-1/2 max-w-[calc(100%-2rem)] -translate-x-1/2 rounded-full bg-gradient-to-r from-brand-cyan to-brand-cyan-bright px-3 py-1 text-center text-[10px] font-bold uppercase tracking-wide text-white shadow-md sm:max-w-none sm:whitespace-nowrap sm:px-4 sm:text-xs">
                     {plan.badge}
                   </span>
                 ) : null}
@@ -104,7 +104,7 @@ export default function PricingSection() {
                 <div className="mb-6 text-center lg:text-left">
                   <h3 className="text-xl font-bold text-brand-navy">{plan.name}</h3>
                   <p className="mt-4 flex flex-col items-center gap-1 lg:items-start">
-                    <span className="text-4xl font-extrabold tracking-tight text-brand-navy">
+                    <span className="text-3xl font-extrabold tracking-tight text-brand-navy sm:text-4xl">
                       {plan.price}
                     </span>
                     <span className="text-sm font-medium text-brand-navy/55">{plan.cadence}</span>

@@ -29,17 +29,17 @@ export default function FeaturesSection() {
   return (
     <section
       id="features"
-      className="scroll-mt-16 bg-surface-tint py-20 px-6"
+      className="scroll-mt-16 bg-surface-tint px-4 py-16 sm:px-6 sm:py-20"
     >
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto min-w-0 max-w-5xl">
         <div className="mb-14 text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan">
             🚀 What GIA does
           </span>
-          <h2 className="mt-3 text-3xl font-bold text-brand-navy sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-bold text-brand-navy sm:text-3xl md:text-4xl">
             Turn your TikTok data into decisions
           </h2>
-          <p className="mt-4 text-lg text-brand-navy/70 max-w-2xl mx-auto">
+          <p className="mx-auto mt-4 max-w-2xl px-1 text-base text-brand-navy/70 sm:text-lg">
             Most analytics tools show numbers. GIA tells you what they
             mean—and what to do next.
           </p>
@@ -49,7 +49,7 @@ export default function FeaturesSection() {
           {features.map((f) => (
             <div
               key={f.title}
-              className="group rounded-2xl border border-brand-navy/10 bg-background p-7 shadow-sm transition hover:border-brand-cyan/40 hover:shadow-md"
+              className="group rounded-2xl border border-brand-navy/10 bg-background p-5 shadow-sm transition hover:border-brand-cyan/40 hover:shadow-md sm:p-7"
             >
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-cyan/12 text-2xl">
                 {f.icon}

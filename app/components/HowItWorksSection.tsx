@@ -27,20 +27,20 @@ const steps = [
 
 export default function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="scroll-mt-16 bg-brand-navy py-20 px-6">
-      <div className="mx-auto max-w-4xl">
+    <section id="how-it-works" className="scroll-mt-16 bg-brand-navy px-4 py-16 sm:px-6 sm:py-20">
+      <div className="mx-auto min-w-0 max-w-4xl">
         <div className="mb-14 text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan-bright">
             ⚙️ Process
           </span>
-          <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
             How it works
           </h2>
         </div>
 
         <ol className="relative space-y-0">
           {steps.map((step, i) => (
-            <li key={step.number} className="relative flex gap-8 pb-12 last:pb-0">
+            <li key={step.number} className="relative flex gap-4 pb-10 last:pb-0 sm:gap-8 sm:pb-12">
               {/* Vertical connector line */}
               {i < steps.length - 1 && (
                 <div className="absolute left-7 top-14 h-full w-px bg-white/15" />
@@ -52,8 +52,8 @@ export default function HowItWorksSection() {
               </div>
 
               {/* Content */}
-              <div className="pt-2">
-                <h3 className="text-lg font-semibold text-white">{step.title}</h3>
+              <div className="min-w-0 pt-1 sm:pt-2">
+                <h3 className="text-base font-semibold text-white sm:text-lg">{step.title}</h3>
                 <p className="mt-1 text-sm leading-relaxed text-white/65">
                   {step.description}
                 </p>

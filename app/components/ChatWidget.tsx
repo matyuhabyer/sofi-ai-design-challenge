@@ -93,7 +93,7 @@ export default function ChatWidget() {
   }
 
   return (
-    <div className="pointer-events-none fixed bottom-0 right-0 z-50 flex flex-col items-end gap-3 p-4 sm:p-6">
+    <div className="pointer-events-none fixed bottom-0 right-0 z-50 flex max-w-[100vw] flex-col items-end gap-3 p-3 sm:p-6">
       <div
         id="gia-chat-panel"
         className={`pointer-events-auto flex max-h-[min(28rem,calc(100dvh-8rem))] w-[min(22rem,calc(100vw-2rem))] flex-col overflow-hidden rounded-2xl border border-brand-navy/10 bg-white shadow-2xl shadow-brand-navy/15 ${panelMotion} ${

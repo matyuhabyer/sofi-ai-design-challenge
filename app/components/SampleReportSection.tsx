@@ -2,23 +2,23 @@ export default function SampleReportSection() {
   return (
     <section
       id="sample-report"
-      className="scroll-mt-16 bg-background px-6 py-20"
+      className="scroll-mt-16 bg-background px-4 py-16 sm:px-6 sm:py-20"
     >
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto min-w-0 max-w-4xl">
         <div className="mb-12 text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan">
             👀 See what you&apos;ll get
           </span>
-          <h2 className="mt-3 text-3xl font-bold text-brand-navy sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-bold text-brand-navy sm:text-3xl md:text-4xl">
             Before you even try it
           </h2>
-          <p className="mt-3 text-brand-navy/70">
+          <p className="mt-3 px-1 text-sm text-brand-navy/70 sm:text-base">
             Here&apos;s a sample report generated from a real creator&apos;s public profile.
           </p>
         </div>
 
-        <div className="rounded-2xl border border-brand-navy/12 bg-background p-8 shadow-xl shadow-brand-navy/8">
-          <div className="mb-8 flex items-center gap-4">
+        <div className="rounded-2xl border border-brand-navy/12 bg-background p-4 shadow-xl shadow-brand-navy/8 sm:p-6 md:p-8">
+          <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center">
             <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-brand-cyan to-brand-cyan-bright text-2xl font-bold text-white">
               @
             </div>
@@ -26,13 +26,13 @@ export default function SampleReportSection() {
               <p className="text-lg font-semibold text-brand-navy">@example_creator</p>
               <p className="text-sm text-brand-navy/55">Report generated • May 2025</p>
             </div>
-            <span className="ml-auto shrink-0 rounded-full bg-brand-cyan/12 px-3 py-1 text-sm font-medium text-brand-cyan">
+            <span className="w-fit shrink-0 rounded-full bg-brand-cyan/12 px-3 py-1 text-xs font-medium text-brand-cyan sm:ml-auto sm:text-sm">
               Analysis complete
             </span>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-3">
-            <div className="rounded-xl border border-brand-navy/10 bg-surface-tint/50 p-5">
+          <div className="grid gap-4 md:grid-cols-3 md:gap-6">
+            <div className="rounded-xl border border-brand-navy/10 bg-surface-tint/50 p-4 sm:p-5">
               <p className="mb-1 text-xs font-semibold tracking-wider text-brand-navy/55 uppercase">
                 📊 Account Score
               </p>
@@ -51,7 +51,7 @@ export default function SampleReportSection() {
               </p>
             </div>
 
-            <div className="rounded-xl border border-brand-navy/10 bg-surface-tint/50 p-5">
+            <div className="rounded-xl border border-brand-navy/10 bg-surface-tint/50 p-4 sm:p-5">
               <p className="mb-1 text-xs font-semibold tracking-wider text-brand-navy/55 uppercase">
                 🧠 Key Insight
               </p>
@@ -62,7 +62,7 @@ export default function SampleReportSection() {
               </p>
             </div>
 
-            <div className="rounded-xl border border-brand-cyan/35 bg-brand-cyan/8 p-5">
+            <div className="rounded-xl border border-brand-cyan/35 bg-brand-cyan/8 p-4 sm:p-5">
               <p className="mb-1 text-xs font-semibold tracking-wider text-brand-cyan uppercase">
                 💡 What to post next
               </p>
@@ -75,7 +75,7 @@ export default function SampleReportSection() {
             </div>
           </div>
 
-          <div className="mt-6 rounded-xl border border-brand-navy/10 bg-surface-tint/50 p-5">
+          <div className="mt-6 rounded-xl border border-brand-navy/10 bg-surface-tint/50 p-4 sm:p-5">
             <p className="mb-3 text-xs font-semibold tracking-wider text-brand-navy/55 uppercase">
               🔍 Top comment themes
             </p>

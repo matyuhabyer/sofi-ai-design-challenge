@@ -7,18 +7,18 @@ const insights = [
 
 export default function ForCreatorsSection() {
   return (
-    <section id="creators" className="scroll-mt-16 bg-background py-20 px-6">
-      <div className="mx-auto max-w-5xl">
+    <section id="creators" className="scroll-mt-16 bg-background px-4 py-16 sm:px-6 sm:py-20">
+      <div className="mx-auto min-w-0 max-w-5xl">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           {/* Text side */}
           <div>
             <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan">
               🔍 Built for creators
             </span>
-            <h2 className="mt-3 text-3xl font-bold text-brand-navy sm:text-4xl">
+            <h2 className="mt-3 text-2xl font-bold text-brand-navy sm:text-3xl md:text-4xl">
               You don&apos;t need to understand metrics
             </h2>
-            <p className="mt-5 text-lg text-brand-navy/70 leading-relaxed">
+            <p className="mt-5 text-base leading-relaxed text-brand-navy/70 sm:text-lg">
               GIA explains your content like a strategist would—in plain
               language, without the jargon.
             </p>
@@ -36,7 +36,7 @@ export default function ForCreatorsSection() {
           </div>
 
           {/* Visual side — decorative "strategist card" */}
-          <div className="rounded-2xl border border-brand-navy/12 bg-surface-tint p-8 shadow-xl shadow-brand-navy/8">
+          <div className="rounded-2xl border border-brand-navy/12 bg-surface-tint p-5 shadow-xl shadow-brand-navy/8 sm:p-8">
             <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-brand-navy/55">
               GIA says…
             </p>

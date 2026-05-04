@@ -24,12 +24,12 @@ export default function HeroSection() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-background px-6 py-16 scroll-mt-16 sm:py-24"
+      className="relative flex min-h-dvh flex-col justify-center overflow-hidden bg-background px-4 py-12 scroll-mt-16 sm:px-6 sm:py-16"
     >
       <div className="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-brand-cyan-bright/25 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-brand-cyan/20 blur-3xl" />
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(260px,380px)] lg:gap-14">
+      <div className="relative mx-auto grid max-w-6xl min-w-0 items-center gap-10 sm:gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(240px,min(380px,36vw))] lg:gap-14">
         {/* Copy + form */}
         <div className="text-center lg:text-left">
           <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-cyan/35 bg-brand-cyan/10 px-4 py-1.5 text-sm font-medium text-brand-navy">
@@ -37,11 +37,11 @@ export default function HeroSection() {
             Powered by SOFI AI
           </span>
 
-          <h1 className="mx-auto mt-4 max-w-xl text-4xl leading-[1.15] font-extrabold tracking-tight text-brand-navy sm:text-5xl lg:mx-0 lg:max-w-2xl lg:text-6xl">
+          <h1 className="mx-auto mt-4 max-w-xl text-[1.65rem] leading-[1.15] font-extrabold tracking-tight text-brand-navy sm:text-4xl sm:leading-tight md:text-5xl lg:mx-0 lg:max-w-2xl lg:text-6xl">
             Know what your TikTok audience is actually telling you.
           </h1>
 
-          <p className="mt-6 text-xl leading-relaxed text-brand-navy/75">
+          <p className="mt-6 text-base leading-relaxed text-brand-navy/75 sm:text-lg md:text-xl">
             Paste your profile link. GIA turns your content into a clear report—what worked, what
             didn&apos;t, and what to post next.
           </p>
@@ -49,44 +49,44 @@ export default function HeroSection() {
           <form
             id="get-started"
             onSubmit={handleAnalyze}
-            className="mt-10 scroll-mt-16 flex flex-col gap-3 sm:flex-row sm:items-center lg:justify-start lg:text-left"
+            className="mt-10 scroll-mt-16 flex w-full min-w-0 flex-col gap-3 sm:flex-row sm:items-center lg:justify-start lg:text-left"
           >
             <input
               type="url"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
               placeholder="https://www.tiktok.com/@yourhandle"
-              className="w-full rounded-xl border border-brand-navy/15 bg-white px-5 py-4 text-brand-navy placeholder-brand-navy/40 shadow-sm focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/25 sm:max-w-md lg:w-full lg:max-w-md"
+              className="min-h-[3rem] w-full min-w-0 rounded-xl border border-brand-navy/15 bg-white px-4 py-3.5 text-brand-navy placeholder-brand-navy/40 shadow-sm focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/25 sm:px-5 sm:py-4 sm:max-w-md lg:w-full lg:max-w-md"
             />
             <button
               type="submit"
-              className="rounded-xl bg-gradient-to-r from-brand-cyan to-brand-cyan-bright px-8 py-4 font-semibold text-white shadow-lg shadow-brand-cyan/30 transition hover:opacity-90 motion-safe:active:scale-[0.98]"
+              className="w-full shrink-0 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-cyan-bright px-6 py-3.5 text-center text-[0.9375rem] font-semibold text-white shadow-lg shadow-brand-cyan/30 transition hover:opacity-90 motion-safe:active:scale-[0.98] sm:w-auto sm:py-4 sm:text-base"
             >
               Analyze my TikTok
             </button>
           </form>
 
-          <div className="mt-5 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
+          <div className="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4 lg:justify-start">
             <a
               href="#sample-report"
-              className="text-sm font-medium text-brand-cyan underline-offset-4 hover:text-brand-cyan-bright hover:underline"
+              className="text-center text-sm font-medium text-brand-cyan underline-offset-4 hover:text-brand-cyan-bright hover:underline"
             >
               View sample report ↓
             </a>
             <span className="hidden h-1 w-1 rounded-full bg-brand-navy/30 sm:block" />
-            <span className="text-sm text-brand-navy/55">
+            <span className="text-center text-sm text-brand-navy/55 sm:text-left lg:text-left">
               No login required · Public profiles only
             </span>
           </div>
         </div>
 
         {/* Gia + speech bubble + product card */}
-        <div className="mx-auto flex w-full max-w-[320px] flex-col items-center justify-self-center lg:max-w-none lg:justify-self-end lg:items-end">
+          <div className="mx-auto flex w-full min-w-0 max-w-[min(100%,20rem)] flex-col items-center sm:max-w-none lg:mx-0 lg:max-w-none lg:items-end">
           <figure className="relative w-full">
             <div
               className="motion-safe:animate-[gia-hero-bubble-float_4.5s_ease-in-out_infinite] motion-reduce:animate-none relative z-10 mx-auto mb-3 max-w-[min(100%,19rem)] lg:absolute lg:-top-24 lg:right-0 lg:mx-0 lg:mb-0 lg:max-w-[17.5rem] lg:-translate-x-4"
             >
-              <div className="relative rounded-2xl border border-brand-navy/10 bg-white px-5 py-4 text-left shadow-lg shadow-brand-navy/10">
+              <div className="relative rounded-2xl border border-brand-navy/10 bg-white px-4 py-3.5 text-left shadow-lg shadow-brand-navy/10 sm:px-5 sm:py-4">
                 <p className="text-[0.95rem] leading-relaxed text-brand-navy sm:text-base">
                   <span className="font-semibold text-brand-navy">Hey — I&apos;m Gia!</span> Paste your
                   public TikTok link below and I&apos;ll walk you through what&apos;s working, what
@@ -121,8 +121,8 @@ export default function HeroSection() {
             </figcaption>
           </figure>
 
-          <div className="mt-6 w-full max-w-[280px] rounded-2xl border border-brand-navy/12 bg-white px-5 py-4 text-center shadow-lg shadow-brand-navy/12 sm:max-w-[320px] lg:max-w-[280px] lg:self-center">
-            <p className="text-lg leading-snug font-extrabold tracking-tight text-brand-navy sm:text-xl">
+          <div className="mt-6 w-full max-w-[min(100%,280px)] rounded-2xl border border-brand-navy/12 bg-white px-4 py-3.5 text-center shadow-lg shadow-brand-navy/12 sm:max-w-[320px] sm:px-5 sm:py-4 lg:max-w-[280px] lg:self-center">
+            <p className="text-base leading-snug font-extrabold tracking-tight text-brand-navy sm:text-lg md:text-xl">
               GIA —{" "}
               <span className="bg-gradient-to-r from-brand-cyan to-brand-cyan-bright bg-clip-text text-transparent">
                 Generative Influencer Analyst

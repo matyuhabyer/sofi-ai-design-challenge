@@ -38,13 +38,13 @@ export default function FAQSection() {
   }
 
   return (
-    <section id="faq" className="scroll-mt-16 bg-surface-tint py-20 px-6">
-      <div className="mx-auto max-w-2xl">
+    <section id="faq" className="scroll-mt-16 bg-surface-tint px-4 py-16 sm:px-6 sm:py-20">
+      <div className="mx-auto min-w-0 max-w-2xl">
         <div className="mb-12 text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan">
             ❓ FAQ
           </span>
-          <h2 className="mt-3 text-3xl font-bold text-brand-navy sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-bold text-brand-navy sm:text-3xl md:text-4xl">
             Frequently asked questions
           </h2>
         </div>
@@ -57,10 +57,12 @@ export default function FAQSection() {
             >
               <button
                 onClick={() => toggle(i)}
-                className="flex w-full items-center justify-between px-6 py-5 text-left"
+                className="flex w-full items-start justify-between gap-3 px-4 py-4 text-left sm:gap-4 sm:px-6 sm:py-5"
                 aria-expanded={openIndex === i}
               >
-                <span className="font-medium text-brand-navy">{faq.question}</span>
+                <span className="min-w-0 flex-1 text-sm font-medium text-brand-navy sm:text-base">
+                  {faq.question}
+                </span>
                 <span
                   className={`ml-4 shrink-0 text-brand-cyan transition-transform duration-200 ${
                     openIndex === i ? "rotate-45" : ""
@@ -71,7 +73,7 @@ export default function FAQSection() {
               </button>
 
               {openIndex === i && (
-                <div className="border-t border-brand-navy/10 px-6 py-5">
+                <div className="border-t border-brand-navy/10 px-4 py-4 sm:px-6 sm:py-5">
                   <p className="text-sm leading-relaxed text-brand-navy/75">
                     {faq.answer}
                   </p>
