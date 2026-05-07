@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const NAV_LINKS = [
   { href: "#sample-report", label: "Sample report" },
   { href: "#pricing", label: "Pricing" },
@@ -9,9 +11,23 @@ export default function SiteHeader() {
       <div className="mx-auto flex max-w-6xl min-w-0 items-center gap-3 px-3 py-2.5 sm:gap-4 sm:px-6 sm:py-3">
         <a
           href="#top"
-          className="shrink-0 text-lg font-bold tracking-tight text-brand-navy transition-colors duration-200 hover:text-brand-cyan motion-safe:hover:translate-x-0.5"
+          className="flex shrink-0 items-center gap-2 transition-opacity duration-200 hover:opacity-85"
+          aria-label="GIA home"
         >
-          GIA
+          <Image
+            src="/gia-logo.png"
+            alt="GIA logo"
+            width={1080}
+            height={1080}
+            className="h-9 w-9 object-contain"
+            priority
+          />
+          <span className="font-heading inline-flex items-baseline gap-1 text-xl font-extrabold tracking-tight text-brand-navy">
+            <span>GIA</span>
+            <span className="text-[0.7rem] font-semibold tracking-[0.22em] text-brand-navy/65 sm:text-[0.75rem]">
+              by SOFI AI
+            </span>
+          </span>
         </a>
 
         <nav

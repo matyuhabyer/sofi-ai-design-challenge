@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 
 function TalkingDots() {
   return (
@@ -14,13 +13,6 @@ function TalkingDots() {
 }
 
 export default function HeroSection() {
-  const [url, setUrl] = useState("");
-
-  function handleAnalyze(e: React.FormEvent) {
-    e.preventDefault();
-    alert(`Analyzing: ${url || "https://www.tiktok.com/@example"}`);
-  }
-
   return (
     <section
       id="top"
@@ -42,29 +34,18 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-6 text-base leading-relaxed text-brand-navy/75 sm:text-lg md:text-xl">
-            Paste your profile link. GIA turns your content into a clear report—what worked, what
+            GIA turns your content into a clear report—what worked, what
             didn&apos;t, and what to post next.
           </p>
 
-          <form
-            id="get-started"
-            onSubmit={handleAnalyze}
-            className="mt-10 scroll-mt-16 flex w-full min-w-0 flex-col gap-3 sm:flex-row sm:items-center lg:justify-start lg:text-left"
-          >
-            <input
-              type="url"
-              value={url}
-              onChange={(e) => setUrl(e.target.value)}
-              placeholder="https://www.tiktok.com/@yourhandle"
-              className="min-h-[3rem] w-full min-w-0 rounded-xl border border-brand-navy/15 bg-white px-4 py-3.5 text-brand-navy placeholder-brand-navy/40 shadow-sm focus:border-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan/25 sm:px-5 sm:py-4 sm:max-w-md lg:w-full lg:max-w-md"
-            />
-            <button
-              type="submit"
-              className="w-full shrink-0 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-cyan-bright px-6 py-3.5 text-center text-[0.9375rem] font-semibold text-white shadow-lg shadow-brand-cyan/30 transition hover:opacity-90 motion-safe:active:scale-[0.98] sm:w-auto sm:py-4 sm:text-base"
+          <div className="mt-10 flex w-full min-w-0 justify-center lg:justify-start lg:text-left">
+            <a
+              href="#early-access"
+              className="inline-flex w-full items-center justify-center rounded-xl bg-linear-to-r from-brand-cyan to-brand-cyan-bright px-6 py-3.5 text-center text-[0.9375rem] font-semibold text-white shadow-lg shadow-brand-cyan/30 transition hover:opacity-90 motion-safe:active:scale-[0.98] sm:w-auto sm:py-4 sm:text-base"
             >
               Analyze my TikTok
-            </button>
-          </form>
+            </a>
+          </div>
 
           <div className="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4 lg:justify-start">
             <a
@@ -75,23 +56,21 @@ export default function HeroSection() {
             </a>
             <span className="hidden h-1 w-1 rounded-full bg-brand-navy/30 sm:block" />
             <span className="text-center text-sm text-brand-navy/55 sm:text-left lg:text-left">
-              No login required · Public profiles only
+              Public profiles only
             </span>
           </div>
         </div>
 
         {/* Gia + speech bubble + product card */}
-          <div className="mx-auto flex w-full min-w-0 max-w-[min(100%,20rem)] flex-col items-center sm:max-w-none lg:mx-0 lg:max-w-none lg:items-end">
-          <figure className="relative w-full">
+        <div className="mx-auto flex w-full min-w-0 max-w-[min(100%,20rem)] flex-col items-center sm:max-w-none lg:mx-0 lg:max-w-none lg:items-end">
+          <div className="relative w-full">
             <div
-              className="motion-safe:animate-[gia-hero-bubble-float_4.5s_ease-in-out_infinite] motion-reduce:animate-none relative z-10 mx-auto mb-3 max-w-[min(100%,19rem)] lg:absolute lg:-top-24 lg:right-0 lg:mx-0 lg:mb-0 lg:max-w-[17.5rem] lg:-translate-x-4"
+              className="motion-safe:animate-[gia-hero-bubble-float_4.5s_ease-in-out_infinite] motion-reduce:animate-none relative z-30 mx-auto mb-3 max-w-[min(100%,19rem)] lg:absolute lg:-top-16 lg:right-0 lg:mx-0 lg:mb-0 lg:max-w-[17.5rem] lg:-translate-x-4"
             >
-              <div className="relative rounded-2xl border border-brand-navy/10 bg-white px-4 py-3.5 text-left shadow-lg shadow-brand-navy/10 sm:px-5 sm:py-4">
+              <div className="relative rounded-2xl border border-brand-navy/10 bg-white px-4 py-3.5 text-left shadow-xl shadow-brand-navy/10 sm:px-5 sm:py-4">
                 <p className="text-[0.95rem] leading-relaxed text-brand-navy sm:text-base">
-                  <span className="font-semibold text-brand-navy">Hey — I&apos;m Gia!</span> Paste your
-                  public TikTok link below and I&apos;ll walk you through what&apos;s working, what
+                  <span className="font-semibold text-brand-navy">Hey — I&apos;m Gia! </span> I'm your honest Tiktok strategist and I&apos;ll walk you through what&apos;s working, what
                   isn&apos;t, and what to post next.
-                  <TalkingDots />
                 </p>
               </div>
               <div
@@ -100,34 +79,38 @@ export default function HeroSection() {
               />
             </div>
 
-            <div className="relative mx-auto flex justify-center lg:pt-10">
-              <div
-                className="relative h-[220px] w-[220px] shrink-0 overflow-hidden rounded-full border-[5px] border-white shadow-[0_12px_40px_rgba(32,23,71,0.2)] ring-[3px] ring-brand-cyan/35 motion-safe:transition-transform motion-safe:duration-300 motion-safe:hover:scale-[1.03] sm:h-[260px] sm:w-[260px] lg:h-[280px] lg:w-[280px]"
-              >
-                <Image
-                  src="/gia-image.jpg"
-                  alt="Gia, the GIA assistant"
-                  width={560}
-                  height={560}
-                  priority
-                  sizes="(max-width: 640px) 220px, (max-width: 1024px) 260px, 280px"
-                  className="h-full w-full select-none object-cover object-[center_18%] scale-[1.08]"
-                />
+            <div className="relative z-20 flex w-full flex-col items-center rounded-[2rem] border-[4px] border-white bg-white/50 p-5 shadow-[0_12px_40px_rgba(32,23,71,0.12)] ring-1 ring-brand-navy/5 backdrop-blur-md sm:p-6 lg:mt-6 lg:p-8">
+              <figure className="relative z-10 w-full -mb-6">
+                <div className="relative mx-auto flex justify-center">
+                  <div
+                    className="relative h-[300px] w-[300px] shrink-0 motion-safe:transition-transform motion-safe:duration-300 motion-safe:hover:scale-[1.03] sm:h-[350px] sm:w-[350px] lg:h-[400px] lg:w-[400px]"
+                  >
+                    <Image
+                      src="/gia-illustration.png"
+                      alt="Gia, the GIA assistant"
+                      width={560}
+                      height={560}
+                      priority
+                      sizes="(max-width: 640px) 300px, (max-width: 1024px) 350px, 400px"
+                      className="h-full w-full select-none object-cover drop-shadow-xl"
+                    />
+                  </div>
+                </div>
+                <figcaption className="sr-only">
+                  Gia introduces GIA and invites you to paste your TikTok profile link for an audience
+                  breakdown.
+                </figcaption>
+              </figure>
+
+              <div className="relative z-20 w-full max-w-[min(100%,280px)] rounded-2xl border border-brand-navy/12 bg-white px-4 py-3.5 text-center shadow-sm sm:max-w-[320px] sm:px-5 sm:py-4 lg:max-w-full">
+                <p className="text-base leading-snug font-extrabold tracking-tight text-brand-navy sm:text-lg md:text-xl">
+                  GIA —{" "}
+                  <span className="bg-gradient-to-r from-brand-cyan to-brand-cyan-bright bg-clip-text text-transparent">
+                    Generative Influencer Analyst
+                  </span>
+                </p>
               </div>
             </div>
-            <figcaption className="sr-only">
-              Gia introduces GIA and invites you to paste your TikTok profile link for an audience
-              breakdown.
-            </figcaption>
-          </figure>
-
-          <div className="mt-6 w-full max-w-[min(100%,280px)] rounded-2xl border border-brand-navy/12 bg-white px-4 py-3.5 text-center shadow-lg shadow-brand-navy/12 sm:max-w-[320px] sm:px-5 sm:py-4 lg:max-w-[280px] lg:self-center">
-            <p className="text-base leading-snug font-extrabold tracking-tight text-brand-navy sm:text-lg md:text-xl">
-              GIA —{" "}
-              <span className="bg-gradient-to-r from-brand-cyan to-brand-cyan-bright bg-clip-text text-transparent">
-                Generative Influencer Analyst
-              </span>
-            </p>
           </div>
         </div>
       </div>

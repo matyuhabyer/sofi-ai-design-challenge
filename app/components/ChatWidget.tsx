@@ -108,7 +108,7 @@ export default function ChatWidget() {
       >
         <header className="flex items-center gap-3 border-b border-brand-navy/10 bg-surface-tint/80 px-4 py-3">
           <Image
-            src="/gia-image.jpg"
+            src="/gia-illustration.png"
             alt=""
             width={40}
             height={40}

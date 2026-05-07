@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 const muted = "text-white/60";
@@ -60,8 +61,14 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-3 lg:gap-10 xl:gap-16">
           {/* Brand + waitlist */}
           <div className="min-w-0 lg:max-w-sm">
-            <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-              <span className="text-2xl font-bold tracking-tight sm:text-3xl">GIA</span>
+            <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+              <Image
+                src="/gia-logo.png"
+                alt="GIA logo"
+                width={1080}
+                height={1080}
+                className="h-10 w-10 object-contain sm:h-12 sm:w-12"
+              />
               <span className={`text-sm ${muted}`}>by SOFI AI</span>
             </div>
             <p className={`mt-4 text-sm leading-relaxed sm:text-[15px] ${muted}`}>
