@@ -48,7 +48,7 @@ export default function FAQSection() {
   }
 
   return (
-    <section id="faq" className="relative scroll-mt-16 bg-gradient-to-b from-surface-tint to-background px-4 py-16 sm:px-6 sm:py-20">
+    <section id="faq" className="relative scroll-mt-16 border-b-[1.5px] border-brand-navy/10 bg-gradient-to-tr from-surface-lavender via-background to-surface-lavender px-4 py-16 sm:px-6 sm:py-20">
 
 
       <div className="relative mx-auto min-w-0 max-w-2xl">

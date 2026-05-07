@@ -4,6 +4,7 @@ import SampleReportSection from "./components/SampleReportSection";
 import FeaturesSection from "./components/FeaturesSection";
 import HowItWorksSection from "./components/HowItWorksSection";
 import ForCreatorsSection from "./components/ForCreatorsSection";
+import GiaStorySection from "./components/GiaStorySection";
 import PricingSection from "./components/PricingSection";
 import FAQSection from "./components/FAQSection";
 import CTASection from "./components/CTASection";
@@ -28,6 +29,9 @@ export default function Home() {
       </Reveal>
       <Reveal>
         <ForCreatorsSection />
+      </Reveal>
+      <Reveal>
+        <GiaStorySection />
       </Reveal>
       <Reveal>
         <PricingSection />

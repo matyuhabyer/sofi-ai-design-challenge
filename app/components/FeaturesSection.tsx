@@ -29,7 +29,7 @@ export default function FeaturesSection() {
   return (
     <section
       id="features"
-      className="relative scroll-mt-16 bg-gradient-to-b from-surface-tint to-background px-4 py-16 sm:px-6 sm:py-20"
+      className="relative scroll-mt-16 border-b-[1.5px] border-brand-navy/10 bg-gradient-to-tr from-surface-coral via-background to-surface-coral px-4 py-16 sm:px-6 sm:py-20"
     >
 
 

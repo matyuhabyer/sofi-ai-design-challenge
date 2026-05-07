@@ -7,7 +7,7 @@ const insights = [
 
 export default function ForCreatorsSection() {
   return (
-    <section id="creators" className="relative scroll-mt-16 bg-background px-4 py-16 sm:px-6 sm:py-20">
+    <section id="creators" className="relative scroll-mt-16 border-b-[1.5px] border-brand-navy/10 bg-gradient-to-tl from-background via-surface-tint to-background px-4 py-16 sm:px-6 sm:py-20">
 
 
       <div className="relative mx-auto min-w-0 max-w-5xl">

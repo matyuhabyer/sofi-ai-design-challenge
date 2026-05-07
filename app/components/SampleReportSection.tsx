@@ -2,7 +2,7 @@ export default function SampleReportSection() {
   return (
     <section
       id="sample-report"
-      className="relative scroll-mt-16 bg-gradient-to-b from-background to-surface-tint px-4 py-16 sm:px-6 sm:py-20"
+      className="relative scroll-mt-16 border-b-[1.5px] border-brand-navy/10 bg-gradient-to-b from-surface-tint via-background to-surface-tint px-4 py-16 sm:px-6 sm:py-20"
     >
 
 

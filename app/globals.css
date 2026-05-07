@@ -10,6 +10,8 @@
   --brand-navy: #201747;
   /* Subtle surfaces */
   --surface-tint: #ebfafd;
+  --surface-coral: #fff1f1;
+  --surface-lavender: #f0edfb;
 }
 
 @theme inline {
@@ -22,6 +24,8 @@
   --color-brand-cyan-bright: var(--brand-cyan-bright);
   --color-brand-navy: var(--brand-navy);
   --color-surface-tint: var(--surface-tint);
+  --color-surface-coral: var(--surface-coral);
+  --color-surface-lavender: var(--surface-lavender);
 }
 
 body {

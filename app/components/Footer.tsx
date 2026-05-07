@@ -43,7 +43,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-white/10 bg-brand-navy px-4 py-14 font-sans text-white sm:px-6 sm:py-16 lg:py-20">
+    <footer className="border-t-[1.5px] border-white/10 bg-brand-navy px-4 py-14 font-sans text-white sm:px-6 sm:py-16 lg:py-20">
       <div className="mx-auto min-w-0 max-w-6xl">
         <div className="grid gap-12 lg:grid-cols-3 lg:gap-10 xl:gap-16">
           {/* Brand + waitlist */}

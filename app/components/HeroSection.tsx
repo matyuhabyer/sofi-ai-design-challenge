@@ -16,9 +16,9 @@ export default function HeroSection() {
   return (
     <section
       id="top"
-      className="relative flex min-h-dvh flex-col justify-center bg-gradient-to-b from-background to-surface-tint px-4 py-12 scroll-mt-16 sm:px-6 sm:py-16"
+      className="relative flex min-h-dvh flex-col justify-center border-b-[1.5px] border-brand-navy/10 bg-gradient-to-br from-background via-surface-tint to-background px-4 py-12 scroll-mt-16 sm:px-6 sm:py-16"
     >
-      <div className="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-brand-cyan-bright/25 blur-3xl" />
+      <div className="pointer-events-none absolute -top-40 -left-40 h-[28rem] w-[42rem] -rotate-12 rounded-[100%] bg-brand-cyan-bright/25 blur-3xl" />
 
       <div className="relative mx-auto grid max-w-6xl min-w-0 items-center gap-10 sm:gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(240px,min(380px,36vw))] lg:gap-14">
         {/* Copy + form */}

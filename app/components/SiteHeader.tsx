@@ -2,6 +2,7 @@ import Image from "next/image";
 
 const NAV_LINKS = [
   { href: "#sample-report", label: "See Sample Analysis" },
+  { href: "#gia-story", label: "Gia's Story" },
   { href: "#pricing", label: "View Plans" },
 ] as const;
 

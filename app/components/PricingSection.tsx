@@ -68,7 +68,7 @@ function CheckIcon() {
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="relative scroll-mt-16 bg-gradient-to-b from-background to-surface-tint px-4 py-16 sm:px-6 sm:py-20">
+    <section id="pricing" className="relative scroll-mt-16 border-b-[1.5px] border-brand-navy/10 bg-gradient-to-b from-background to-surface-tint px-4 py-16 sm:px-6 sm:py-20">
 
 
       <div className="relative mx-auto min-w-0 max-w-6xl">
