@@ -98,8 +98,8 @@ export default function CTASection() {
             </div>
           </div>
           <p className="max-w-[16rem] text-center text-sm leading-snug text-brand-navy/65 sm:max-w-none sm:text-left">
-            <span className="font-semibold text-brand-navy">1,200+ Filipino creators</span>{" "}
-            already on the waitlist
+            Join the <span className="font-semibold text-brand-navy">1,200+ Filipino creators</span>{" "}
+            getting early access to GIA!
           </p>
         </div>
       </div>
