@@ -16,10 +16,9 @@ export default function HeroSection() {
   return (
     <section
       id="top"
-      className="relative flex min-h-dvh flex-col justify-center overflow-hidden bg-background px-4 py-12 scroll-mt-16 sm:px-6 sm:py-16"
+      className="relative flex min-h-dvh flex-col justify-center bg-gradient-to-b from-background to-surface-tint px-4 py-12 scroll-mt-16 sm:px-6 sm:py-16"
     >
       <div className="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-brand-cyan-bright/25 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-brand-cyan/20 blur-3xl" />
 
       <div className="relative mx-auto grid max-w-6xl min-w-0 items-center gap-10 sm:gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(240px,min(380px,36vw))] lg:gap-14">
         {/* Copy + form */}
@@ -69,7 +68,7 @@ export default function HeroSection() {
             >
               <div className="relative rounded-2xl border border-brand-navy/10 bg-white px-4 py-3.5 text-left shadow-xl shadow-brand-navy/10 sm:px-5 sm:py-4">
                 <p className="text-[0.95rem] leading-relaxed text-brand-navy sm:text-base">
-                  <span className="font-semibold text-brand-navy">Hey — I&apos;m Gia! </span> I'm your honest Tiktok strategist and I&apos;ll walk you through what&apos;s working, what
+                  <span className="font-semibold text-brand-navy">Hey — I&apos;m GIA! </span> I'm your honest Tiktok strategist and I&apos;ll walk you through what&apos;s working, what
                   isn&apos;t, and what to post next.
                 </p>
               </div>

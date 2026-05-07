@@ -2,9 +2,11 @@ export default function SampleReportSection() {
   return (
     <section
       id="sample-report"
-      className="scroll-mt-16 bg-background px-4 py-16 sm:px-6 sm:py-20"
+      className="relative scroll-mt-16 bg-gradient-to-b from-background to-surface-tint px-4 py-16 sm:px-6 sm:py-20"
     >
-      <div className="mx-auto min-w-0 max-w-4xl">
+
+
+      <div className="relative mx-auto min-w-0 max-w-4xl">
         <div className="mb-12 text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan">
             👀 See what you&apos;ll get

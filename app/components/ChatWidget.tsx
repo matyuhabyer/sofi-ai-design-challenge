@@ -159,7 +159,7 @@ export default function ChatWidget() {
             >
               {m.role === "assistant" ? (
                 <Image
-                  src="/gia-image.jpg"
+                  src="/gia-illustration.png"
                   alt=""
                   width={32}
                   height={32}

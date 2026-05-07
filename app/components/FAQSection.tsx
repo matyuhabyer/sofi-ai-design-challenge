@@ -4,14 +4,19 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "Do I need to log in?",
+    question: "Do I need to connect my Tiktok account?",
     answer:
-      "No. Just paste your TikTok profile link and GIA gets to work immediately. No account, no permissions, no data stored.",
+      "No. GIA only analyzes publicly available TikTok data. No login or account connection is required.",
   },
   {
-    question: "What data do you analyze?",
+    question: "Which Tiktok profiles work?",
     answer:
-      "We only use publicly available TikTok data—your videos, captions, and comments. We never access private information or require any credentials.",
+      "Any public TikTok profile. If your account is private, you'll need to make it public first — you can switch back after.",
+  },
+  {
+    question: "Is my data safe?",
+    answer:
+      "Yes. GIA only uses publicly accessible TikTok content and does not require account access or passwords.",
   },
   {
     question: "How long does it take?",
@@ -19,14 +24,19 @@ const faqs = [
       "Usually 30–60 seconds. The exact time depends on how many videos and comments your profile has.",
   },
   {
+    question: "What makes GIA different from Tiktok Analytics?",
+    answer:
+      "TikTok Analytics shows you numbers. GIA explains why those numbers happened, what patterns exist, and what actions to take next.",
+  },
+  {
     question: "Is this for beginners or advanced creators?",
     answer:
       "Both. The report is written in plain language so anyone can act on it immediately, but the insights are deep enough to satisfy experienced creators who want to level up.",
   },
   {
-    question: "Which TikTok profiles work?",
+    question: "Is this only for creators in the Philippines?",
     answer:
-      "Any public TikTok profile. If your account is private, you'll need to make it public first (you can switch back after).",
+      "No, but GIA is optimized for Filipino creators and understands local language, humor, and audience behavior patterns.",
   },
 ];
 
@@ -38,8 +48,10 @@ export default function FAQSection() {
   }
 
   return (
-    <section id="faq" className="scroll-mt-16 bg-surface-tint px-4 py-16 sm:px-6 sm:py-20">
-      <div className="mx-auto min-w-0 max-w-2xl">
+    <section id="faq" className="relative scroll-mt-16 bg-gradient-to-b from-surface-tint to-background px-4 py-16 sm:px-6 sm:py-20">
+
+
+      <div className="relative mx-auto min-w-0 max-w-2xl">
         <div className="mb-12 text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan">
             ❓ FAQ

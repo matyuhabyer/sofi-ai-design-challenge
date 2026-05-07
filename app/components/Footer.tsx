@@ -1,15 +1,8 @@
-"use client";
-
-import Image from "next/image";
-import { useState } from "react";
-
 const muted = "text-white/60";
 const columnHeading =
   "text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-cyan-bright";
 const footerLink =
   "block w-fit text-sm text-white/90 transition-colors hover:text-brand-cyan-bright";
-const fieldBase =
-  "rounded-lg border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white outline-none transition-colors placeholder:text-white/45 focus-visible:border-brand-cyan focus-visible:ring-2 focus-visible:ring-brand-cyan/25";
 
 function IconTikTok({ className }: { className?: string }) {
   return (
@@ -47,13 +40,7 @@ const socialPillClass =
   "inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm text-white/90 transition-colors hover:border-brand-cyan/45 hover:bg-white/10 hover:text-brand-cyan-bright";
 
 export default function Footer() {
-  const [waitlistEmail, setWaitlistEmail] = useState("");
   const year = new Date().getFullYear();
-
-  function handleWaitlist(e: React.FormEvent) {
-    e.preventDefault();
-    alert(`Waitlist sign-up (demo): ${waitlistEmail || "your@email.com"}`);
-  }
 
   return (
     <footer className="border-t border-white/10 bg-brand-navy px-4 py-14 font-sans text-white sm:px-6 sm:py-16 lg:py-20">
@@ -61,43 +48,16 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-3 lg:gap-10 xl:gap-16">
           {/* Brand + waitlist */}
           <div className="min-w-0 lg:max-w-sm">
-            <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-              <Image
-                src="/gia-logo.png"
-                alt="GIA logo"
-                width={1080}
-                height={1080}
-                className="h-10 w-10 object-contain sm:h-12 sm:w-12"
-              />
-              <span className={`text-sm ${muted}`}>by SOFI AI</span>
-            </div>
+            <span className="font-heading inline-flex items-baseline gap-1 text-xl font-extrabold tracking-tight text-white">
+              <span>GIA</span>
+              <span className="text-[0.7rem] font-semibold tracking-[0.22em] text-white/65 sm:text-[0.75rem]">
+                by SOFI AI
+              </span>
+            </span>
             <p className={`mt-4 text-sm leading-relaxed sm:text-[15px] ${muted}`}>
               Your TikTok&apos;s most brutally honest strategist. No fluff, just what&apos;s
               actually working.
             </p>
-            <form
-              onSubmit={handleWaitlist}
-              className="mt-6 flex min-w-0 flex-col gap-2 sm:flex-row sm:items-stretch"
-            >
-              <label htmlFor="footer-waitlist-email" className="sr-only">
-                Email for waitlist
-              </label>
-              <input
-                id="footer-waitlist-email"
-                type="email"
-                autoComplete="email"
-                value={waitlistEmail}
-                onChange={(e) => setWaitlistEmail(e.target.value)}
-                placeholder="your@email.com"
-                className={`min-w-0 flex-1 ${fieldBase}`}
-              />
-              <button
-                type="submit"
-                className="shrink-0 cursor-pointer rounded-lg bg-gradient-to-r from-brand-cyan to-brand-cyan-bright px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-brand-cyan/25 transition hover:opacity-95"
-              >
-                Join waitlist
-              </button>
-            </form>
           </div>
 
           {/* Product */}

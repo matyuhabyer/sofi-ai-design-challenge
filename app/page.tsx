@@ -1,4 +1,5 @@
 import HeroSection from "./components/HeroSection";
+import MarqueeSection from "./components/MarqueeSection";
 import SampleReportSection from "./components/SampleReportSection";
 import FeaturesSection from "./components/FeaturesSection";
 import HowItWorksSection from "./components/HowItWorksSection";
@@ -13,6 +14,9 @@ export default function Home() {
   return (
     <main className="min-w-0 flex-1">
       <HeroSection />
+      <Reveal>
+        <MarqueeSection />
+      </Reveal>
       <Reveal>
         <SampleReportSection />
       </Reveal>

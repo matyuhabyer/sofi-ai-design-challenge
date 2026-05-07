@@ -29,9 +29,11 @@ export default function FeaturesSection() {
   return (
     <section
       id="features"
-      className="scroll-mt-16 bg-surface-tint px-4 py-16 sm:px-6 sm:py-20"
+      className="relative scroll-mt-16 bg-gradient-to-b from-surface-tint to-background px-4 py-16 sm:px-6 sm:py-20"
     >
-      <div className="mx-auto min-w-0 max-w-5xl">
+
+
+      <div className="relative mx-auto min-w-0 max-w-5xl">
         <div className="mb-14 text-center">
           <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan">
             🚀 What GIA does

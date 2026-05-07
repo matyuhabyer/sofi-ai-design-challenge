@@ -25,10 +25,10 @@ export default function CTASection() {
   return (
     <section
       id="early-access"
-      className="relative scroll-mt-16 overflow-hidden bg-background px-4 py-16 sm:px-6 sm:py-24"
+      className="relative scroll-mt-16 bg-gradient-to-b from-background to-surface-tint px-4 py-16 sm:px-6 sm:py-24"
     >
-      <div className="pointer-events-none absolute -top-40 left-1/2 h-80 w-[28rem] -translate-x-1/2 rounded-full bg-brand-cyan-bright/20 blur-3xl sm:w-[36rem]" />
-      <div className="pointer-events-none absolute -bottom-32 right-0 h-72 w-72 rounded-full bg-brand-cyan/15 blur-3xl" />
+      <div className="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-brand-cyan-bright/20 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-brand-cyan/20 blur-3xl" />
 
       <div className="relative mx-auto max-w-2xl text-center">
         <span className="inline-flex items-center gap-2 rounded-full border border-brand-cyan/35 bg-brand-cyan/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-brand-navy">

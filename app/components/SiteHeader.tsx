@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 const NAV_LINKS = [
-  { href: "#sample-report", label: "Sample report" },
-  { href: "#pricing", label: "Pricing" },
+  { href: "#sample-report", label: "See Sample Analysis" },
+  { href: "#pricing", label: "View Plans" },
 ] as const;
 
 export default function SiteHeader() {
