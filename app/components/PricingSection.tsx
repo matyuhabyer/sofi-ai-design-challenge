@@ -70,11 +70,8 @@ export default function PricingSection() {
   return (
     <section
       id="pricing"
-      className="relative scroll-mt-16 overflow-hidden border-b-[1.5px] border-brand-navy/10 bg-linear-to-br from-[#0f1738] via-brand-navy to-[#24195a] px-4 py-16 text-white sm:px-6 sm:py-20"
+      className="relative scroll-mt-16 overflow-hidden border-b border-brand-navy/10 bg-linear-to-br from-[#0f1738] via-brand-navy to-[#24195a] px-4 py-16 text-white sm:px-6 sm:py-20"
     >
-      <div className="pointer-events-none absolute -top-28 -right-24 h-104 w-152 rounded-full bg-brand-cyan/14 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-32 -left-24 h-128 w-160 rounded-full bg-brand-cyan-bright/10 blur-3xl" />
-
       <div className="relative mx-auto min-w-0 max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-flex items-center rounded-full border border-brand-cyan/35 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.24em] text-brand-cyan-bright">

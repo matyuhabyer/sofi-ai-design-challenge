@@ -20,12 +20,12 @@ export default function SiteHeader() {
             src="/gia-logo-v2.png"
             alt="GIA logo"
             width={1080}
-            height={1080}
-            className="h-9 w-9 object-contain"
+            height={4000}
+            className="h-12 w-12 object-contain"
             priority
           />
           <span className="font-heading inline-flex items-baseline gap-1 text-xl font-extrabold tracking-tight text-white">
-            <span className="text-[0.7rem] font-semibold tracking-[0.22em] text-white/60 sm:text-[0.75rem]">
+            <span className="text-[0.7rem] font-semibold tracking-[0.22em] text-white sm:text-[0.75rem]">
               by SOFI AI
             </span>
           </span>

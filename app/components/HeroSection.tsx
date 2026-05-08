@@ -2,21 +2,11 @@
 
 import Image from "next/image";
 
-function TalkingDots() {
-  return (
-    <span className="ml-1 inline-flex gap-1 align-middle" aria-hidden="true">
-      <span className="motion-safe:animate-bounce inline-block h-1.5 w-1.5 rounded-full bg-brand-cyan [animation-duration:1s]" />
-      <span className="motion-safe:animate-bounce inline-block h-1.5 w-1.5 rounded-full bg-brand-cyan [animation-duration:1s] [animation-delay:150ms]" />
-      <span className="motion-safe:animate-bounce inline-block h-1.5 w-1.5 rounded-full bg-brand-cyan [animation-duration:1s] [animation-delay:300ms]" />
-    </span>
-  );
-}
-
 export default function HeroSection() {
   return (
     <section
       id="top"
-      className="relative flex min-h-dvh flex-col justify-center overflow-hidden border-b-[1.5px] border-brand-navy/10 bg-linear-to-br from-[#0f1738] via-brand-navy to-[#24195a] px-4 py-12 text-white scroll-mt-16 sm:px-6 sm:py-16"
+      className="relative flex min-h-dvh flex-col justify-center overflow-hidden border-b-[1.5px] border-brand-navy/10 bg-linear-to-br from-[#0f1738] via-brand-navy to-[#24195a] px-4 py-16 text-white scroll-mt-16 sm:px-6 sm:py-20"
     >
       <div className="pointer-events-none absolute -top-40 -left-40 h-112 w-2xl -rotate-12 rounded-[100%] bg-brand-cyan/20 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-120 rounded-[100%] bg-brand-cyan-bright/10 blur-3xl" />
@@ -29,11 +19,21 @@ export default function HeroSection() {
             Powered by SOFI AI
           </span>
 
-          <h1 className="mx-auto mt-4 max-w-xl text-[1.65rem] leading-[1.15] font-extrabold tracking-tight text-white sm:text-4xl sm:leading-tight md:text-5xl lg:mx-0 lg:max-w-2xl lg:text-6xl">
-            Know what your TikTok audience is actually telling you.
+          <h1 className="mx-auto mt-4 max-w-xl text-[1.85rem] leading-[1.15] font-extrabold tracking-tight text-white sm:text-5xl sm:leading-tight md:text-6xl lg:mx-0 lg:max-w-2xl lg:text-7xl">
+            Know what your{' '}
+            <span className="inline-flex align-baseline">
+              <Image
+                src="/tiktok-logo.png"
+                alt="TikTok"
+                width={240}
+                height={64}
+                className="h-[0.92em] w-auto object-contain align-baseline"
+              />
+            </span>{' '}
+            audience is actually telling you.
           </h1>
 
-          <p className="mt-6 text-base leading-relaxed text-white/72 sm:text-lg md:text-xl">
+          <p className="mt-6 text-lg leading-relaxed text-white/72 sm:text-xl md:text-2xl">
             GIA turns your content into a clear report—what worked, what
             didn&apos;t, and what to post next.
           </p>
@@ -41,13 +41,13 @@ export default function HeroSection() {
           <div className="mt-10 flex w-full min-w-0 justify-center lg:justify-start lg:text-left">
             <a
               href="#early-access"
-              className="inline-flex w-full items-center justify-center rounded-xl bg-linear-to-r from-brand-cyan to-brand-cyan-bright px-6 py-3.5 text-center text-[0.9375rem] font-semibold text-white shadow-lg shadow-brand-cyan/30 transition hover:opacity-90 motion-safe:active:scale-[0.98] sm:w-auto sm:py-4 sm:text-base"
+              className="inline-flex w-full items-center justify-center rounded-xl bg-linear-to-r from-brand-cyan to-brand-cyan-bright px-7 py-4 text-center text-base font-semibold text-white shadow-lg shadow-brand-cyan/30 transition hover:opacity-90 motion-safe:active:scale-[0.98] sm:w-auto sm:py-5 sm:text-lg"
             >
               Analyze My TikTok
             </a>
             <a
               href="#sample-report"
-              className="ml-4 inline-flex w-full items-center justify-center rounded-xl bg-linear-to-r from-brand-cyan to-brand-cyan-bright px-6 py-3.5 text-center text-[0.9375rem] font-semibold text-white shadow-lg shadow-brand-cyan/30 transition hover:opacity-90 motion-safe:active:scale-[0.98] sm:w-auto sm:py-4 sm:text-base"
+              className="ml-4 inline-flex w-full items-center justify-center rounded-xl bg-linear-to-r from-brand-cyan to-brand-cyan-bright px-7 py-4 text-center text-base font-semibold text-white shadow-lg shadow-brand-cyan/30 transition hover:opacity-90 motion-safe:active:scale-[0.98] sm:w-auto sm:py-5 sm:text-lg"
             >
               View Sample Report
             </a>
@@ -58,7 +58,7 @@ export default function HeroSection() {
         <div className="mx-auto flex w-full min-w-0 max-w-[min(100%,20rem)] flex-col items-center sm:max-w-none lg:mx-0 lg:max-w-none lg:items-end">
           <div className="relative w-full">
             <div
-              className="motion-safe:animate-[gia-hero-bubble-float_4.5s_ease-in-out_infinite] motion-reduce:animate-none relative z-30 mx-auto mb-3 max-w-[min(100%,19rem)] lg:absolute lg:-top-16 lg:right-0 lg:mx-0 lg:mb-0 lg:max-w-70 lg:-translate-x-4"
+              className="motion-safe:animate-[gia-hero-bubble-float_4.5s_ease-in-out_infinite] motion-reduce:animate-none relative z-30 mx-auto mb-3 max-w-[min(100%,22rem)] lg:absolute lg:-top-16 lg:right-0 lg:mx-0 lg:mb-0 lg:max-w-80 lg:-translate-x-4"
             >
               <div className="relative rounded-2xl border border-brand-navy/10 bg-white px-4 py-3.5 text-left shadow-xl shadow-black/15 sm:px-5 sm:py-4">
                 <p className="text-[0.95rem] leading-relaxed text-brand-navy sm:text-base">
@@ -76,7 +76,7 @@ export default function HeroSection() {
               <figure className="relative z-10 w-full -mb-6">
                 <div className="relative mx-auto flex justify-center">
                   <div
-                    className="relative h-75 w-75 shrink-0 motion-safe:transition-transform motion-safe:duration-300 motion-safe:hover:scale-[1.03] sm:h-87.5 sm:w-87.5 lg:h-100 lg:w-100"
+                    className="relative h-80 w-80 shrink-0 motion-safe:transition-transform motion-safe:duration-300 motion-safe:hover:scale-[1.03] sm:h-96 sm:w-96 lg:h-112 lg:w-md"
                   >
                     <Image
                       src="/gia-illustration.png"

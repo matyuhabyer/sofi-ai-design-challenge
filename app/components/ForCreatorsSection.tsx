@@ -9,11 +9,8 @@ export default function ForCreatorsSection() {
   return (
     <section
       id="creators"
-      className="relative scroll-mt-16 overflow-hidden border-b-[1.5px] border-brand-navy/10 bg-linear-to-br from-[#0f1738] via-brand-navy to-[#24195a] px-4 py-16 text-white sm:px-6 sm:py-20"
+      className="relative scroll-mt-16 overflow-hidden border-b border-brand-navy/10 bg-linear-to-br from-[#0f1738] via-brand-navy to-[#24195a] px-4 py-16 text-white sm:px-6 sm:py-20"
     >
-      <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-brand-cyan/18 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-28 -left-24 h-80 w-80 rounded-full bg-brand-cyan-bright/10 blur-3xl" />
-
       <div className="relative mx-auto grid min-w-0 max-w-6xl gap-10 lg:grid-cols-[minmax(0,0.84fr)_minmax(320px,0.56fr)] lg:gap-12">
         <div>
           <div className="max-w-2xl">
