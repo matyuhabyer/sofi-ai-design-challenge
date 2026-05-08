@@ -25,7 +25,7 @@ export default function MarqueeSection() {
   );
 
   return (
-    <div className="relative flex w-full overflow-hidden border-b border-brand-navy/10 bg-brand-cyan/5 py-5">
+    <div className="relative flex w-full overflow-hidden border-b border-brand-navy/10 bg-brand-navy py-5">
       <div className="flex w-max min-w-full shrink-0 animate-[marquee_40s_linear_infinite] motion-reduce:animate-none">
         <Group />
         <Group />

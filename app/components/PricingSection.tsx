@@ -68,52 +68,55 @@ function CheckIcon() {
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="relative scroll-mt-16 border-b-[1.5px] border-brand-navy/10 bg-gradient-to-b from-background to-surface-tint px-4 py-16 sm:px-6 sm:py-20">
-
+    <section
+      id="pricing"
+      className="relative scroll-mt-16 overflow-hidden border-b-[1.5px] border-brand-navy/10 bg-linear-to-br from-[#0f1738] via-brand-navy to-[#24195a] px-4 py-16 text-white sm:px-6 sm:py-20"
+    >
+      <div className="pointer-events-none absolute -top-28 -right-24 h-104 w-152 rounded-full bg-brand-cyan/14 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-32 -left-24 h-128 w-160 rounded-full bg-brand-cyan-bright/10 blur-3xl" />
 
       <div className="relative mx-auto min-w-0 max-w-6xl">
-        <div className="mb-14 text-center">
-          <span className="text-sm font-semibold uppercase tracking-widest text-brand-cyan">
+        <div className="mx-auto max-w-2xl text-center">
+          <span className="inline-flex items-center rounded-full border border-brand-cyan/35 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.24em] text-brand-cyan-bright">
             Pricing
           </span>
-          <h2 className="mt-3 text-2xl font-bold text-brand-navy sm:text-3xl md:text-4xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             Pick the depth that fits your growth
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl px-1 text-base text-brand-navy/70 sm:text-lg">
-            Clear one-time reports or ongoing partnership—all priced in PHP,
-            no mystery tiers.
+          <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-white/72 sm:text-lg">
+            Clear one-time reports or ongoing partnership, all priced in PHP, with no mystery tiers.
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:items-start">
+        <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:justify-items-center xl:items-start">
           {PLANS.map((plan) => {
             const featured = plan.variant === "featured";
             return (
               <article
                 key={plan.name}
-                className={`relative flex min-w-0 flex-col rounded-2xl border bg-background p-5 shadow-sm transition motion-safe:duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-lg sm:p-8 ${
+                className={`relative flex min-w-0 w-full max-w-[24rem] flex-col rounded-4xl border p-5 shadow-lg shadow-black/10 transition motion-safe:duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-2xl sm:p-8 ${
                   featured
-                    ? "border-brand-cyan shadow-brand-cyan/15 ring-2 ring-brand-cyan/35"
-                    : "border-brand-navy/10 hover:border-brand-cyan/25"
+                    ? "border-brand-cyan bg-white/8 ring-2 ring-brand-cyan/30"
+                    : "border-white/10 bg-white/6 hover:border-brand-cyan/35"
                 }`}
               >
                 {plan.badge ? (
-                  <span className="absolute -top-3 left-1/2 max-w-[calc(100%-2rem)] -translate-x-1/2 rounded-full bg-gradient-to-r from-brand-cyan to-brand-cyan-bright px-3 py-1 text-center text-[10px] font-bold uppercase tracking-wide text-white shadow-md sm:max-w-none sm:whitespace-nowrap sm:px-4 sm:text-xs">
+                  <span className="absolute -top-3 left-1/2 max-w-[calc(100%-2rem)] -translate-x-1/2 rounded-full bg-linear-to-r from-brand-cyan to-brand-cyan-bright px-3 py-1 text-center text-[10px] font-bold uppercase tracking-wide text-white shadow-md sm:max-w-none sm:whitespace-nowrap sm:px-4 sm:text-xs">
                     {plan.badge}
                   </span>
                 ) : null}
 
                 <div className="mb-6 text-center lg:text-left">
-                  <h3 className="text-xl font-bold text-brand-navy">{plan.name}</h3>
+                  <h3 className="text-xl font-bold text-white">{plan.name}</h3>
                   <p className="mt-4 flex flex-col items-center gap-1 lg:items-start">
-                    <span className="text-3xl font-extrabold tracking-tight text-brand-navy sm:text-4xl">
+                    <span className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                       {plan.price}
                     </span>
-                    <span className="text-sm font-medium text-brand-navy/55">{plan.cadence}</span>
+                    <span className="text-sm font-medium text-white/55">{plan.cadence}</span>
                   </p>
                 </div>
 
-                <ul className="mb-8 flex flex-1 flex-col gap-3 text-sm text-brand-navy/80">
+                <ul className="mb-8 flex flex-1 flex-col gap-3 text-sm text-white/78">
                   {plan.highlights.map((line) => (
                     <li key={line} className="flex gap-3">
                       <CheckIcon />
@@ -126,8 +129,8 @@ export default function PricingSection() {
                   href={plan.ctaHref}
                   className={`mt-auto inline-flex w-full items-center justify-center rounded-xl px-5 py-3.5 text-center text-sm font-semibold transition motion-safe:active:scale-[0.98] ${
                     featured
-                      ? "bg-gradient-to-r from-brand-cyan to-brand-cyan-bright text-white shadow-lg shadow-brand-cyan/30 hover:opacity-95"
-                      : "border border-brand-navy/15 bg-background text-brand-navy hover:border-brand-cyan/40 hover:bg-surface-tint"
+                      ? "bg-linear-to-r from-brand-cyan to-brand-cyan-bright text-white shadow-lg shadow-brand-cyan/30 hover:opacity-95"
+                      : "border border-white/10 bg-white/6 text-white hover:border-brand-cyan/35 hover:bg-white/10"
                   }`}
                 >
                   {plan.cta}

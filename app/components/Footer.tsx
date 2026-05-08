@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const muted = "text-white/60";
 const columnHeading =
   "text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-cyan-bright";
@@ -49,7 +51,14 @@ export default function Footer() {
           {/* Brand + waitlist */}
           <div className="min-w-0 lg:max-w-sm">
             <span className="font-heading inline-flex items-baseline gap-1 text-xl font-extrabold tracking-tight text-white">
-              <span>GIA</span>
+              <Image
+                src="/gia-logo-v2.png"
+                alt="GIA logo"
+                width={1080}
+                height={1080}
+                className="h-9 w-9 object-contain"
+                priority
+              />
               <span className="text-[0.7rem] font-semibold tracking-[0.22em] text-white/65 sm:text-[0.75rem]">
                 by SOFI AI
               </span>
