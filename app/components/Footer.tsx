@@ -50,16 +50,16 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-3 lg:gap-10 xl:gap-16">
           {/* Brand + waitlist */}
           <div className="min-w-0 lg:max-w-sm">
-            <span className="font-heading inline-flex items-baseline gap-1 text-xl font-extrabold tracking-tight text-white">
+            <span className="font-heading inline-flex items-center gap-1 text-xl font-extrabold tracking-tight text-white">
               <Image
                 src="/gia-logo-v2.png"
                 alt="GIA logo"
                 width={1080}
-                height={1080}
-                className="h-9 w-9 object-contain"
+                height={4000}
+                className="h-12 w-12 shrink-0 object-contain"
                 priority
               />
-              <span className="text-[0.7rem] font-semibold tracking-[0.22em] text-white/65 sm:text-[0.75rem]">
+              <span className="text-[0.7rem] font-semibold tracking-[0.22em] text-white sm:text-[0.75rem]">
                 by SOFI AI
               </span>
             </span>

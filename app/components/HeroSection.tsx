@@ -6,20 +6,20 @@ export default function HeroSection() {
   return (
     <section
       id="top"
-      className="relative flex min-h-dvh flex-col justify-center overflow-hidden border-b-[1.5px] border-brand-navy/10 bg-linear-to-br from-[#0f1738] via-brand-navy to-[#24195a] px-4 py-16 text-white scroll-mt-16 sm:px-6 sm:py-20"
+      className="relative flex min-h-dvh flex-col justify-center overflow-hidden border-b-[1.5px] border-brand-navy/10 bg-linear-to-br from-[#0f1738] via-brand-navy to-[#24195a] px-4 py-12 text-white scroll-mt-16 sm:px-6 sm:py-16"
     >
       <div className="pointer-events-none absolute -top-40 -left-40 h-112 w-2xl -rotate-12 rounded-[100%] bg-brand-cyan/20 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-120 rounded-[100%] bg-brand-cyan-bright/10 blur-3xl" />
 
-      <div className="relative mx-auto grid max-w-6xl min-w-0 items-center gap-10 sm:gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(240px,min(380px,36vw))] lg:gap-14">
+      <div className="relative mx-auto grid max-w-6xl min-w-0 items-center gap-10 sm:gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(240px,min(380px,36vw))] lg:items-start lg:gap-14">
         {/* Copy + form */}
         <div className="text-center lg:text-left">
           <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-cyan/35 bg-white/5 px-4 py-1.5 text-sm font-medium text-brand-cyan-bright">
             <span className="h-2 w-2 rounded-full bg-green-400 motion-safe:animate-pulse" />
-            Powered by SOFI AI
+            Now Analyzing TikTok Profiles
           </span>
 
-          <h1 className="mx-auto mt-4 max-w-xl text-[1.85rem] leading-[1.15] font-extrabold tracking-tight text-white sm:text-5xl sm:leading-tight md:text-6xl lg:mx-0 lg:max-w-2xl lg:text-7xl">
+          <h1 className="mx-auto max-w-xl text-2xl leading-[1.15] font-extrabold tracking-tight text-white sm:text-3xl sm:leading-tight md:text-5xl lg:mx-0 lg:max-w-2xl lg:text-6xl">
             Know what your{' '}
             <span className="inline-flex align-baseline">
               <Image
@@ -55,7 +55,7 @@ export default function HeroSection() {
         </div>
 
         {/* Gia + speech bubble + product card */}
-        <div className="mx-auto flex w-full min-w-0 max-w-[min(100%,20rem)] flex-col items-center sm:max-w-none lg:mx-0 lg:max-w-none lg:items-end">
+        <div className="mx-auto flex w-full min-w-0 max-w-[min(100%,20rem)] flex-col items-center sm:max-w-none lg:mx-0 lg:max-w-none lg:items-start">
           <div className="relative w-full">
             <div
               className="motion-safe:animate-[gia-hero-bubble-float_4.5s_ease-in-out_infinite] motion-reduce:animate-none relative z-30 mx-auto mb-3 max-w-[min(100%,22rem)] lg:absolute lg:-top-16 lg:right-0 lg:mx-0 lg:mb-0 lg:max-w-80 lg:-translate-x-4"
@@ -72,7 +72,7 @@ export default function HeroSection() {
               />
             </div>
 
-            <div className="relative z-20 flex w-full flex-col items-center rounded-4xl border border-brand-navy/10 bg-brand-navy p-5 shadow-[0_12px_40px_rgba(0,0,0,0.2)] ring-1 ring-brand-navy/5 sm:p-6 lg:mt-6 lg:p-8">
+            <div className="relative z-20 flex w-full flex-col items-center rounded-4xl border border-brand-navy/10 bg-brand-navy p-5 shadow-[0_12px_40px_rgba(0,0,0,0.2)] ring-1 ring-brand-navy/5 sm:p-6 lg:p-8">
               <figure className="relative z-10 w-full -mb-6">
                 <div className="relative mx-auto flex justify-center">
                   <div
