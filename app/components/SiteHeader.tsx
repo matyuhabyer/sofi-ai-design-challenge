@@ -20,14 +20,11 @@ export default function SiteHeader() {
             alt="GIA logo"
             width={1080}
             height={1080}
-            className="h-9 w-9 object-contain"
+            className="h-15 w-15 object-contain"
             priority
           />
-          <span className="font-heading inline-flex items-baseline gap-1 text-xl font-extrabold tracking-tight text-brand-navy">
-            <span>GIA</span>
-            <span className="text-[0.7rem] font-semibold tracking-[0.22em] text-brand-navy/65 sm:text-[0.75rem]">
-              by SOFI AI
-            </span>
+          <span className="text-[0.7rem] font-semibold tracking-[0.22em] text-brand-navy/65 sm:text-[0.75rem]">
+            by SOFI AI
           </span>
         </a>
 
