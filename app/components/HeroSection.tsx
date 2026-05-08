@@ -16,7 +16,7 @@ export default function HeroSection() {
         <div className="text-center lg:text-left">
           <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-cyan/35 bg-white/5 px-4 py-1.5 text-sm font-medium text-brand-cyan-bright">
             <span className="h-2 w-2 rounded-full bg-green-400 motion-safe:animate-pulse" />
-            Now Analyzing TikTok Profiles
+            Now Analyzing TikTok Creators
           </span>
 
           <h1 className="mx-auto max-w-xl text-2xl leading-[1.15] font-extrabold tracking-tight text-white sm:text-3xl sm:leading-tight md:text-5xl lg:mx-0 lg:max-w-2xl lg:text-6xl">
