@@ -2,17 +2,6 @@
 
 import { useState } from "react";
 
-const AVATARS = [
-  { initials: "KL", className: "bg-brand-navy" },
-  { initials: "MR", className: "bg-brand-cyan" },
-  { initials: "JT", className: "bg-brand-cyan-bright" },
-  { initials: "AC", className: "bg-brand-navy/85" },
-  {
-    initials: "SB",
-    className: "bg-gradient-to-br from-brand-cyan to-brand-cyan-bright",
-  },
-] as const;
-
 export default function CTASection() {
   const [handle, setHandle] = useState("");
 
@@ -82,27 +71,6 @@ export default function CTASection() {
               <p className="mt-4 text-xs text-white/55 sm:text-sm">
                 Free for your first analysis. No credit card needed.
               </p>
-
-              <div className="mt-6 border-t border-white/10 pt-6">
-                <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:gap-6">
-                  <div className="flex shrink-0 justify-center sm:justify-end">
-                    <div className="flex">
-                      {AVATARS.map((a, i) => (
-                        <span
-                          key={a.initials}
-                          className={`flex h-11 w-11 items-center justify-center rounded-full border-2 border-brand-navy text-[11px] font-bold text-white shadow-sm ${a.className} ${i > 0 ? "-ml-3" : ""}`}
-                          aria-hidden
-                        >
-                          {a.initials}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  <p className="max-w-[16rem] text-center text-sm leading-snug text-white/68 sm:max-w-none sm:text-left">
-                    Join the <span className="font-semibold text-white">1,200+ Filipino creators</span> getting early access to GIA!
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

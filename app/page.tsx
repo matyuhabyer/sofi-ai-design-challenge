@@ -22,6 +22,9 @@ export default function Home() {
         <FeaturesSection />
       </Reveal>
       <Reveal>
+        <SampleReportSection />
+      </Reveal>
+      <Reveal>
         <HowItWorksSection />
       </Reveal>
       <Reveal>
@@ -29,9 +32,6 @@ export default function Home() {
       </Reveal>
       <Reveal>
         <GiaStorySection />
-      </Reveal>
-      <Reveal>
-        <SampleReportSection />
       </Reveal>
       <Reveal>
         <PricingSection />

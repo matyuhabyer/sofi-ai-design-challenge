@@ -19,7 +19,7 @@ const PLANS = [
     name: "Deep dive",
     price: "₱6,500",
     cadence: "one-time report",
-    badge: "Most popular",
+    badge: "Most popular for growing creators",
     highlights: [
       "30 video analysis",
       "Full hook + comment deep dive",

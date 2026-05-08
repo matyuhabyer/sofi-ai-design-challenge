@@ -45,12 +45,25 @@ export default function HeroSection() {
             >
               Analyze My TikTok
             </a>
-            <a
-              href="#sample-report"
-              className="ml-4 inline-flex w-full items-center justify-center rounded-xl bg-linear-to-r from-brand-cyan to-brand-cyan-bright px-7 py-4 text-center text-base font-semibold text-white shadow-lg shadow-brand-cyan/30 transition hover:opacity-90 motion-safe:active:scale-[0.98] sm:w-auto sm:py-5 sm:text-lg"
-            >
-              View Sample Report
-            </a>
+          </div>
+
+          <div className="mt-6 flex items-center justify-center gap-3 text-sm text-white/68 lg:justify-start">
+            <div className="flex shrink-0 justify-center">
+              <div className="flex">
+                {['MJ', 'AR', 'LC'].map((initials, index) => (
+                  <span
+                    key={initials}
+                    className={`flex h-9 w-9 items-center justify-center rounded-full border-2 border-brand-navy bg-white/10 text-[10px] font-bold text-white shadow-sm ${index > 0 ? '-ml-2.5' : ''}`}
+                    aria-hidden
+                  >
+                    {initials}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <p className="max-w-[18rem] leading-snug sm:max-w-none">
+              Join the <span className="font-semibold text-white">1,200+ Filipino creators</span> getting early access to GIA!
+            </p>
           </div>
         </div>
 

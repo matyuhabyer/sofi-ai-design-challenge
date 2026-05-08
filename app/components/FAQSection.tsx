@@ -4,34 +4,34 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "Do I need to connect my Tiktok account?",
+    question: "Do I need to connect my TikTok account?",
     answer:
-      "No. GIA only analyzes publicly available TikTok data. No login or account connection is required.",
+      "No. GIA only analyzes publicly available TikTok content such as videos, captions, comments, and engagement signals. No login, password, or account connection is required.",
   },
   {
-    question: "Which Tiktok profiles work?",
+    question: "What kind of TikTok profiles work with GIA?",
     answer:
-      "Any public TikTok profile. If your account is private, you'll need to make it public first — you can switch back after.",
+      "GIA works with public TikTok profiles that already have posted content and audience engagement. Private accounts cannot be analyzed unless temporarily switched to public.",
   },
   {
     question: "Is my data safe?",
     answer:
-      "Yes. GIA only uses publicly accessible TikTok content and does not require account access or passwords.",
+      "Yes. GIA only reads publicly accessible content and never asks for sensitive account access or private information. Your analysis is designed to be secure and privacy-conscious.",
   },
   {
-    question: "How long does it take?",
+    question: "How long does the analysis take?",
     answer:
-      "Usually 30–60 seconds. The exact time depends on how many videos and comments your profile has.",
+      "Most reports are generated within 30–60 seconds depending on the number of videos and comments analyzed. Larger profiles may take slightly longer to process.",
   },
   {
-    question: "What makes GIA different from Tiktok Analytics?",
+    question: "What makes GIA different from TikTok Analytics?",
     answer:
-      "TikTok Analytics shows you numbers. GIA explains why those numbers happened, what patterns exist, and what actions to take next.",
+      "TikTok Analytics shows raw numbers and charts. GIA explains what those numbers actually mean, identifies patterns across your content, and recommends what to post next.",
   },
   {
-    question: "Is this for beginners or advanced creators?",
+    question: "Who is GIA built for?",
     answer:
-      "Both. The report is written in plain language so anyone can act on it immediately, but the insights are deep enough to satisfy experienced creators who want to level up.",
+      "GIA is designed for creators who want clearer guidance without needing to understand complicated analytics. Whether you're just starting or already growing an audience, GIA helps turn data into actionable strategy.",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function FAQSection() {
           </h2>
         </div>
 
-        <div className="mx-auto grid w-full max-w-4xl gap-2 md:grid-cols-2">
+          <div className="mx-auto grid w-full max-w-4xl gap-2">
           {faqs.map((faq, i) => (
             <div
               key={faq.question}

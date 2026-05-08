@@ -1,7 +1,7 @@
 const features = [
   {
     icon: "📈",
-    title: "See which videos actually grab attention",
+    title: "Find out why your best video worked",
     description:
       "GIA identifies your top-performing content and explains exactly why it resonated with viewers.",
   },

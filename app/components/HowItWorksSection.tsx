@@ -3,7 +3,7 @@ const steps = [
     number: "01",
     title: "Paste your TikTok profile link",
     description:
-      "Just copy the URL from your browser—no account connection or permissions needed.",
+      "Just copy the URL from your browser—no account connection or permissions needed. We ask for your link, your goal, and nothing else.",
   },
   {
     number: "02",
