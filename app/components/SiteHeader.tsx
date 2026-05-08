@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 const NAV_LINKS = [
+    { href: "#how-it-works", label: "How It Works" },
   { href: "#sample-report", label: "Sample Analysis" },
-  { href: "#how-it-works", label: "How It Works" },
   { href: "#gia-story", label: "Gia's Story" },
   { href: "#pricing", label: "Pricing" },
 ] as const;
