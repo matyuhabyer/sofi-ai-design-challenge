@@ -69,7 +69,7 @@ export default function GiaStorySection() {
                     @gia — hired ✅
                   </p>
                   <p>
-                    &ldquo;Wait, I&apos;m actually starting next week?! &rdquo;
+                    &ldquo;Wait, I&apos;m actually starting next week?!&rdquo;
                   </p>
                 </div>
               </div>
@@ -81,26 +81,26 @@ export default function GiaStorySection() {
               The story behind GIA
             </p>
             <h3 className="mt-2 text-2xl font-bold text-white sm:text-[2rem]">
-              we found our intern on TikTok.
+              We found our intern on TikTok.
             </h3>
 
             <div className="mt-4 space-y-4 text-sm leading-relaxed text-white/72 sm:space-y-5 sm:text-base">
               <p>
-                SOFI AI founder <span className="font-semibold text-white">Sophia Sy </span> wasn&apos;t looking for an intern. then she stumbled on a TikTok from a girl named Gia — and hired her on the spot. not through LinkedIn, not through a referral. through a 60-second video.
+                SOFI AI founder <span className="font-semibold text-white">Sophia Sy </span> wasn&apos;t looking for an intern. then she stumbled on a TikTok from a girl named Gia — and hired her on the spot. Not through LinkedIn. Not through a referral. Through a 60-second video.
               </p>
 
               <p>
-                that moment proved something: in 2025, <span className="font-semibold text-white">your TikTok is your resume</span>. your content is your personal brand. and most creators have no idea how powerful — or how fixable — theirs actually is.
+                That moment proved something: in 2026, <span className="font-semibold text-white">your TikTok is your resume</span>. your content is your personal brand. and most creators have no idea how powerful — or how fixable — theirs actually is.
               </p>
 
               <blockquote className="border-l-[3px] border-brand-cyan pl-5 py-1">
                 <p className="text-base font-semibold italic text-white sm:text-lg">
-                  &ldquo;attention is currency. and most creators are leaving it on the table.&rdquo;
+                  &ldquo;Attention is currency, and most creators are leaving it on the table.&rdquo;
                 </p>
               </blockquote>
 
               <p>
-                so we built GIA. the AI version of that intern — the one who actually watches your content, reads your comments, and tells you the truth.
+                So we built GIA. The AI version of that intern — the one who actually watches your content, reads your comments, and tells you the truth.
               </p>
             </div>
           </div>

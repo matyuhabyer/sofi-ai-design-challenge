@@ -108,10 +108,10 @@ export default function HeroSection() {
                 </figcaption>
               </figure>
 
-              <div className="relative z-20 w-full max-w-[min(100%,280px)] rounded-2xl border border-brand-navy/10 bg-linear-to-r from-brand-cyan to-brand-cyan-bright px-4 py-3.5 text-center shadow-sm sm:max-w-[320px] sm:px-5 sm:py-4 lg:max-w-full">
-                <p className="text-base leading-snug font-extrabold tracking-tight text-white sm:text-lg md:text-xl">
+              <div className="relative z-20 w-full max-w-[min(100%,280px)] rounded-2xl border border-brand-navy/10 bg-brand-navy px-4 py-3.5 text-center shadow-sm sm:max-w-[320px] sm:px-5 sm:py-4 lg:max-w-full">
+                <p className="text-base leading-snug font-extrabold tracking-tight text-cyan-400 sm:text-lg md:text-xl">
                   GIA —{" "}
-                  <span className="text-white">
+                  <span className="text-cyan-400">
                     Generative Influencer Analyst
                   </span>
                 </p>
